@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f1f1f;
+}
+
+.changeWindow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+}
+
+input{
+    padding: 5px;
+    outline: 0;
+    border: none;
+    background-color: #1f1f1f;
+    color: rgb(170, 168, 168);
+    border-right: 1px solid gray;
+    height: 80%;
+    width: 180%;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.currs{
+    border: 1px solid rgb(141, 139, 139);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-right: 0;
+    width: 400px;
+    transition: all .15s;
+}
+.dropdown {
+    height: 100%;
+    width: 100%;
+}
+
+
+.dropdown a{
+    width: 100%;
+    background-color: #1f1f1f;
+    color: rgb(170, 168, 168);
+    cursor: pointer;
+    height: 100%;
+    border: none;
+    text-align: end;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.dropdown a:focus{
+    background-color: black;
+}
+
+.dropdown a:hover {
+    background-color: rgb(48, 48, 48) !important;
+}
+
+.dropdown li, .dropdown ul {
+    background-color: #333232;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown li:active {
+    background-color: #8f8c8c;
+}
+
+.dropdown li:hover {
+    background-color: #8f8c8c;
+}
+
+.dropdown ul::-webkit-scrollbar {
+    background-color: #414040;
+}
+
+.dropdown ul::-webkit-scrollbar-thumb{
+    background-color: #9e9b9b;
+}
+
+.currs:hover{
+    border: 1px solid lightgray;
+}
+
+.currs:has(input:focus){
+    border: 1px solid rgb(107, 189, 228);
+}
+
+
+#search1{
+    width: 100%;
+    background-color: #706e6e;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    
+}
+
+#search2{
+    width: 100%;
+    background-color: #706e6e;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.search {
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1000;
+}
+
+.dropdown-menu {
+    padding-top: 0;
+}
+
+.search:hover {
+    background-color: #1d1c1c !important;
+}
