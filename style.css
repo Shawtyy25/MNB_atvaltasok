@@ -125,7 +125,7 @@ input::-webkit-inner-spin-button {
     top: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .dropdown-menu {
@@ -134,4 +134,12 @@ input::-webkit-inner-spin-button {
 
 .search:hover {
     background-color: #1d1c1c !important;
+}
+
+.hidden {
+    display:  none;
+}
+
+.active {
+    display: block;
 }
