@@ -1,5 +1,5 @@
 export async function currencySymbols(){
-    const apiPath: string = `https://api.currencyfreaks.com/v2.0/currency-symbols`
+    const apiPath: string = `https://api.exchangerate.host/list?access_key=e79942db6a178419abdaa49e44696de5`
     try {
         const response = await fetch(apiPath)
 
@@ -21,7 +21,7 @@ function insertChanges(currencies: any): void {
     const select1 = document.querySelector('#changeCurrency1 ul') as HTMLUListElement
     const select2 = document.querySelector('#changeCurrency2 ul') as HTMLUListElement
 
-    const symbols = currencies.currencySymbols
+    const symbols = currencies.currencies
         
     for (let key in symbols) {
         select1.appendChild(makeOption(key, symbols[key]))

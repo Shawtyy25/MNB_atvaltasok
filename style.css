@@ -143,3 +143,10 @@ input::-webkit-inner-spin-button {
 .active {
     display: block;
 }
+
+#switcher{
+    color: rgb(165, 162, 162);
+    margin: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}

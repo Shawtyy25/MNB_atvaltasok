@@ -18,7 +18,7 @@
             -->
 
             <div class="curr1 currs">
-                <input type="number" min="0">
+                <input type="number" min="0" id="searchBar1">
                 <div class="dropdown" id="changeCurrency1">
                     <a class="btn btn-secondary dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Choose...
@@ -29,8 +29,13 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="switchSides">
+                <i class="fa-solid fa-arrow-right-arrow-left" id="switcher"></i>
+            </div>
+
             <div class="curr2 currs">
-                <input type="number">
+                <input type="number" disabled id="output">
                 <div class="dropdown" id="changeCurrency2">
                     <a class="btn btn-secondary dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Choose...
@@ -43,7 +48,9 @@
             </div>
         </div>
         
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/15519269fa.js" crossorigin="anonymous"></script>
     </main>
 </body>
 </html>

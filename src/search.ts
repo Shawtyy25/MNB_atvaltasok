@@ -66,3 +66,4 @@ function showElements(option: HTMLLIElement): void {
 
 
 export { searchLeftSide, searchRightSide }
+
